@@ -1,8 +1,15 @@
 const express = require('express');
 const routes = require('./routes');
 // import sequelize connection
-const { Sequelize, DataTypes } = require("sequelize");
+/* const Sequelize = require("sequelize");
 
+const sequelize = new Sequelize('database', 'username', 'password', {
+  host: 'localhost',
+  dialect: 'mysql'
+});
+
+sequelize.close();
+*/
 const app = express();
 const PORT = process.env.PORT || 3001;
 
